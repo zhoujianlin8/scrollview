@@ -1,14 +1,8 @@
-###scrollview安装
-package.json
 
-`````
- '@wm/rate': 'git@github.com:zhoujianlin8/scrollview.git'
-`````
-### scrollview使用
-
-````
-import ScrollView from '@wm/scrollview'
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import ScrollView from '../src/index';
 class Demo extends React.Component{
     constructor(){
         super();
@@ -30,7 +24,7 @@ class Demo extends React.Component{
         this.setState({
             list: [1,2,...this.state.list]
         });
-        cb && cb();// cb（）｜ return true | new Promise //继续触发滚动
+        cb && cb();
         /*return new Promise((resolve)=>{
             this.setState({
                 list: [1,2,...this.state.list]
@@ -49,13 +43,4 @@ class Demo extends React.Component{
         </ScrollView>
     }
 }
-````
-### FDE 工具
-```
-npm install fde-cli -g
-```
-
-### 使用文档
-* [fde-cli](https://www.npmjs.com/package/fde-cli)
-
-
+ReactDOM.render(<Demo />, document.getElementById('container'));
