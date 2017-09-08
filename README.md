@@ -2,7 +2,7 @@
 package.json
 
 `````
- '@wm/rate': 'git@github.com:zhoujianlin8/scrollview.git'
+ '@wm/scrollview': 'git@github.com:zhoujianlin8/scrollview.git'
 `````
 ### scrollview使用
 

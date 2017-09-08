@@ -1,12 +1,9 @@
 {
-  "name": "scrollview",
+  "name": "@wm/scrollview",
   "main": "lib/index.js",
   "version": "0.0.1",
   "scripts": {
     "start": "fde start",
     "build": "fde build"
-  },
-  "dependencies": {
-    "@wm/ajax": "git+ssh://git@192.168.1.209:m/ajax.git"
   }
 }
